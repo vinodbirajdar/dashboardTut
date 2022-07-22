@@ -12,6 +12,7 @@ export class AdminDashboardComponent implements OnInit {
   Users:any;
   user:any;
   child:string= 'i am children;'
+  childtoparent:any;
   private baseUrl = "http://localhost:3000/users";
   ngOnInit() {
    this.user =this._http.get<any>(this.baseUrl).subscribe((res) =>{
@@ -19,6 +20,10 @@ export class AdminDashboardComponent implements OnInit {
    },err =>{
     console.log(err);
    });
+  }
+
+  parentMethod(_data: any){
+    this.childtoparent = _data;
   }
 
 }
