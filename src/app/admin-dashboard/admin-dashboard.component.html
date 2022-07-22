@@ -4,7 +4,7 @@
 </div>
 
 <div class="mt-10 sm:mt-0">
-  <div class="min-h-full  py-12 px-4 sm:px-6 lg:px-8 md:max-w-2xl max-w-md mx-auto bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+  <div class="min-h-full py-12 px-4 sm:px-6 lg:px-8 md:max-w-2xl max-w-md mx-auto bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
     <div class="mt-5 md:mt-0 md:col-span-2"><h1>Users List</h1>
       <ul role="list" class="p-6 divide-y divide-slate-200 ">
         <li *ngFor="let people of Users" class="flex py-4 first:pt-0 last:pb-0">
@@ -13,13 +13,14 @@
             <p class="text-sm font-medium text-slate-900">{{people.name}}</p>
             <p class="text-sm text-slate-500 truncate">{{people.Email}}</p>
           </div>
+          <button class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm">View Details</button>
         </li>
       </ul>
     </div>
   </div>
 </div>
-<p>{{childtoparent}}</p>
-<app-child [loginuser]="child" (notify)="parentMethod($event)"></app-child>
+
+
 
 
 

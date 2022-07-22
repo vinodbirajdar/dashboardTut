@@ -10,6 +10,7 @@ export class ChildComponent implements OnInit {
   @Input() loginuser: any;
   @Output()
   notify: EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {

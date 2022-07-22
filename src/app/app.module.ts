@@ -11,16 +11,18 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       LoginComponent,
       SignupComponent,
       PageNotFoundComponent,
       ForgotpasswordComponent,
       AdminDashboardComponent,
-      ChildComponent
+      ChildComponent,
+      ParentComponent
    ],
   imports: [
     BrowserModule,

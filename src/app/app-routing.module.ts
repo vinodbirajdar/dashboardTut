@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Input, NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
@@ -8,12 +8,16 @@ import { SignupComponent } from './signup/signup.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AuthService } from './auth/auth.service'
 import { AuthGuard } from './auth/auth.guard'
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent},
   { path: 'login', component: LoginComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent, canActivate:[AuthGuard]},
+  { path: 'parent', component: ParentComponent},
+  { path: 'child', component: ChildComponent},
   { path: 'admin-dashboard', component: AdminDashboardComponent},
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
@@ -24,4 +28,5 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthService, AuthGuard]
 })
+
 export class AppRoutingModule { }

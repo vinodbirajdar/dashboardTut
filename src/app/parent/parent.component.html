@@ -1,0 +1,5 @@
+<p>
+  parent works!
+</p>
+<h3>{{childtoparent}}</h3><br/>
+<app-child [loginuser]="parenttochild" (notify)="parentMethod($event)"></app-child>

@@ -39,6 +39,20 @@
       "region": "MH",
       "postalcode": "410001",
       "id": 1
+    },
+    {
+      "firstname": "Vinod",
+      "lastname": "Birajdar",
+      "username": "vbirajdar@hcg.com",
+      "emailaddress": "vbirajdar@hcg.com",
+      "newpassword": "abc",
+      "reenterpassword": "abc",
+      "country": "India",
+      "streetaddress": "Bangalore",
+      "city": "Bangalore",
+      "region": "Karnataka",
+      "postalcode": "560056",
+      "id": 2
     }
   ]
 }
