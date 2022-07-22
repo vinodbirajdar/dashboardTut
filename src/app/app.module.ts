@@ -10,15 +10,17 @@ import { SignupComponent } from './signup/signup.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       LoginComponent,
       SignupComponent,
       PageNotFoundComponent,
       ForgotpasswordComponent,
-      AdminDashboardComponent
+      AdminDashboardComponent,
+      ChildComponent
    ],
   imports: [
     BrowserModule,

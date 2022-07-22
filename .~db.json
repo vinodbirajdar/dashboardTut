@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Jane Cooper",
+      "title": "Regional Paradigm Technician",
+      "Email": "jane.cooper@example.com",
+      "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19808/300-SM965309.jpg"
+    },
+    {
+      "name": "Cody Fisher",
+      "title": "Chief Strategy Officer",
+      "Email": "cody.fisher@example.com",
+      "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/8-SM954116.jpg"
+    },
+    {
+      "name": "Leonard Krasner",
+      "title": "Product Directives Officer",
+      "Email": "leo.kreas@example.com",
+      "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19774/6-SM961276.jpg"
+    },
+    {
+      "name": "Emily Selman",
+      "title": "Senior Designe",
+      "Email": "emily.selman@example.com",
+      "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/17-SM954197.jpg"
+    }
+  ],
+  "signup": [
+    {
+      "firstname": "John",
+      "lastname": "CEna",
+      "username": "johnc",
+      "emailaddress": "jhon@test.com",
+      "newpassword": "json",
+      "reenterpassword": "json",
+      "country": "India",
+      "streetaddress": "Mumbai",
+      "city": "Mumbai",
+      "region": "MH",
+      "postalcode": "410001",
+      "id": 1
+    },
+    {
+      "firstname": "Vinod",
+      "lastname": "B",
+      "username": "Vbjio",
+      "emailaddress": "vb@test.com",
+      "newpassword": "vbjio",
+      "reenterpassword": "vbjio",
+      "country": "India",
+      "streetaddress": "bang",
+      "city": "bang",
+      "region": "ka",
+      "postalcode": "560001",
+      "id": 2
+    }
+  ]
+}

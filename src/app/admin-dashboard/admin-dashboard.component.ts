@@ -11,6 +11,7 @@ export class AdminDashboardComponent implements OnInit {
   constructor(private _http:HttpClient) { }
   Users:any;
   user:any;
+  child:string= 'i am children;'
   private baseUrl = "http://localhost:3000/users";
   ngOnInit() {
    this.user =this._http.get<any>(this.baseUrl).subscribe((res) =>{
