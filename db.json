@@ -1,27 +1,35 @@
 {
   "users": [
     {
+      "id":1,
       "name": "Jane Cooper",
       "title": "Regional Paradigm Technician",
       "Email": "jane.cooper@example.com",
+      "dob": "2022/12/12",
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19808/300-SM965309.jpg"
     },
     {
+      "id":2,
       "name": "Cody Fisher",
       "title": "Chief Strategy Officer",
       "Email": "cody.fisher@example.com",
+      "dob": "2002/1/1",
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/8-SM954116.jpg"
     },
     {
+      "id":3,
       "name": "Leonard Krasner",
       "title": "Product Directives Officer",
       "Email": "leo.kreas@example.com",
+      "dob": "2007/7/28",
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19774/6-SM961276.jpg"
     },
     {
+      "id":4,
       "name": "Emily Selman",
       "title": "Senior Designe",
       "Email": "emily.selman@example.com",
+      "dob": "2000/12/31",
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/17-SM954197.jpg"
     }
   ],
@@ -53,6 +61,20 @@
       "region": "Karnataka",
       "postalcode": "560056",
       "id": 2
+    },
+    {
+      "firstname": "Abc",
+      "lastname": "c",
+      "username": "Abc",
+      "emailaddress": "abc@gmail.com",
+      "newpassword": "abc",
+      "reenterpassword": "abc",
+      "country": "India",
+      "streetaddress": "ban",
+      "city": "banga",
+      "region": "ka",
+      "postalcode": "560056",
+      "id": 3
     }
   ]
 }

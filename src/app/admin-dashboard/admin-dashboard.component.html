@@ -8,17 +8,21 @@
     <div class="mt-5 md:mt-0 md:col-span-2"><h1>Users List</h1>
       <ul role="list" class="p-6 divide-y divide-slate-200 ">
         <li *ngFor="let people of Users" class="flex py-4 first:pt-0 last:pb-0">
-          <img class="h-10 w-10 rounded-full" [src]="people.ImagePath" alt="{{people.name}}" />
-          <div class="ml-3 overflow-hidden">
-            <p class="text-sm font-medium text-slate-900">{{people.name}}</p>
-            <p class="text-sm text-slate-500 truncate">{{people.Email}}</p>
+          <img class="h-10 w-10 rounded-full flex-none" [src]="people.ImagePath" alt="{{people.name}}" />
+          <div class="ml-3 overflow-hidden flex-1 w-64">
+            <p class="text-sm font-medium text-slate-900"><strong>Name</strong> : {{people.name}}</p>
+            <p class="text-sm text-slate-500 truncate"><strong>Email</strong> : {{people.Email}}</p>
+            <p class="text-sm text-slate-500 truncate"><strong>DOB</strong> :{{people.dob}}</p>
           </div>
           <button class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm">View Details</button>
+          <!-- <button class="px-4 py-2 font-semibold text-sm flex-2 bg-cyan-500 text-white rounded-full shadow-sm">View Details</button> -->
         </li>
       </ul>
     </div>
   </div>
 </div>
+
+
 
 
 
