@@ -10,6 +10,7 @@ import { AuthService } from './auth/auth.service'
 import { AuthGuard } from './auth/auth.guard'
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ViewdetailComponent } from './admin-dashboard/detail/viewdetail/viewdetail.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,11 @@ const routes: Routes = [
   { path: 'forgotpassword', component: ForgotpasswordComponent, canActivate:[AuthGuard]},
   { path: 'parent', component: ParentComponent},
   { path: 'child', component: ChildComponent},
-  { path: 'admin-dashboard', component: AdminDashboardComponent},
+  { path: 'admin-dashboard', component: AdminDashboardComponent,
+    children:[
+      {path: 'admin-detail', component: ViewdetailComponent},
+    ],
+  },
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

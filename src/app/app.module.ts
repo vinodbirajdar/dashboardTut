@@ -12,6 +12,8 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
+import { RoundedCornerDirective } from './customDirectives/rounded-corner.directive';
+import { ViewdetailComponent } from './admin-dashboard/detail/viewdetail/viewdetail.component';
 
 @NgModule({
   declarations: [		
@@ -22,7 +24,9 @@ import { ParentComponent } from './parent/parent.component';
       ForgotpasswordComponent,
       AdminDashboardComponent,
       ChildComponent,
-      ParentComponent
+      ParentComponent,
+      RoundedCornerDirective,
+      ViewdetailComponent
    ],
   imports: [
     BrowserModule,

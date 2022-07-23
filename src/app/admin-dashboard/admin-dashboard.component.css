@@ -1,0 +1,14 @@
+.blue {
+  background-color: rgb(218, 231, 235);
+  border-radius: 10px;
+}
+ .timer{
+  font-weight: 700;
+  width: auto;
+  font-size: large;
+  padding: 10px 39px;
+}
+ .title_users{
+  font-size: 28px;
+  font-weight: 600;
+}

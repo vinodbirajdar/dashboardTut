@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id":1,
+      "id": 1,
       "name": "Jane Cooper",
       "title": "Regional Paradigm Technician",
       "Email": "jane.cooper@example.com",
@@ -9,7 +9,7 @@
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19808/300-SM965309.jpg"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Cody Fisher",
       "title": "Chief Strategy Officer",
       "Email": "cody.fisher@example.com",
@@ -17,7 +17,7 @@
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/8-SM954116.jpg"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Leonard Krasner",
       "title": "Product Directives Officer",
       "Email": "leo.kreas@example.com",
@@ -25,12 +25,34 @@
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19774/6-SM961276.jpg"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Emily Selman",
       "title": "Senior Designe",
       "Email": "emily.selman@example.com",
       "dob": "2000/12/31",
       "ImagePath": "https://d3nn873nee648n.cloudfront.net/900x600/19673/17-SM954197.jpg"
+    }
+  ],
+  "login": [
+    {
+      "email": "vbirajdar@hcg.com",
+      "password": "abc",
+      "id": 1
+    },
+    {
+      "email": "vbirajdar@hcg.com",
+      "password": "abc",
+      "id": 2
+    },
+    {
+      "email": "jhon@test.com",
+      "password": "json",
+      "id": 3
+    },
+    {
+      "email": "jhon@test.com",
+      "password": "json",
+      "id": 4
     }
   ],
   "signup": [
