@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 import { ServiceCService } from '../service-c.service';
 import { Subscription, timer } from 'rxjs';
 import { map, share } from "rxjs/operators";
 import { OnDestroy } from '@angular/core';
+import { DummyDataService } from '../dummy-data.service';
 
 
 @Component({
@@ -11,18 +12,36 @@ import { OnDestroy } from '@angular/core';
   templateUrl: './admin-dashboard.component.html',
   styleUrls: ['./admin-dashboard.component.css']
 })
-export class AdminDashboardComponent implements OnInit,OnDestroy {
+
+export class AdminDashboardComponent implements OnInit, OnDestroy,AfterViewInit {
+
+
   private baseUrl = "http://localhost:3000/users";
   Users:any;
   user:any;
   todayDate:any;
   
-  constructor(private _http:HttpClient,private service:ServiceCService) { }
+  // @ViewChild("high")
+  // refertemplate!: ElementRef;
+
+    
+   @ViewChildren("high")
+   refertemplate!: QueryList<any>;
+
+  constructor(private _http:HttpClient,private service:ServiceCService,private dummy:DummyDataService) {}
+  ngAfterViewInit() {
+    //throw new Error('Method not implemented.');
+    console.log("refertemplate",this.refertemplate);
+    this.refertemplate.last.nativeElement.style.color="red";
+  }
+ 
   date: Date = new Date();
   time = new Date();
   rxTime = new Date();
   intervalId: any;
   subscription: Subscription = new Subscription;
+  userList:any;
+
 
   ngOnInit() {
     this.user =this._http.get<any>(this.baseUrl).subscribe((res) =>{
@@ -32,7 +51,11 @@ export class AdminDashboardComponent implements OnInit,OnDestroy {
     });
     // this.user = this.service.getUser();
     // console.log("this.user",this.user);
-    
+    // this.user =  this.dummy.getUsers().subscribe((data)=>{
+    //   console.log("subscirbe",data);
+    //   this.userList = data;
+    // });
+  //  console.log("user data",this.user)
      // Using Basic Interval
      this.intervalId = setInterval(() => {
       this.time = new Date();
@@ -47,12 +70,14 @@ export class AdminDashboardComponent implements OnInit,OnDestroy {
         this.rxTime = time;
       });
   }
+
   ngOnDestroy() {
     clearInterval(this.intervalId);
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
   }
+ 
   // showTime(){
   //     var date = new Date();
   //     var hours = date.getHours();
